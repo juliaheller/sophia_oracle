@@ -10,7 +10,7 @@ function App() {
     return (
         <div className="App">
             <Goddess />
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 }
