@@ -17,7 +17,6 @@ function App() {
         const max = oracleArr.length;
         const index = Math.floor(Math.random() * Math.floor(max));
         setOracle(oracleArr[index]);
-        console.log(oracle);
     };
 
     return (
