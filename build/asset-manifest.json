@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f361e03.chunk.css",
+    "main.js": "/static/js/main.69ebd4c7.chunk.js",
+    "main.js.map": "/static/js/main.69ebd4c7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.71ab9d7a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.71ab9d7a.js.map",
+    "static/js/2.73cc0801.chunk.js": "/static/js/2.73cc0801.chunk.js",
+    "static/js/2.73cc0801.chunk.js.map": "/static/js/2.73cc0801.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f67a4f3d064b8d51c9067563c00425f3.js": "/precache-manifest.f67a4f3d064b8d51c9067563c00425f3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.73cc0801.chunk.js.LICENSE.txt": "/static/js/2.73cc0801.chunk.js.LICENSE.txt",
+    "static/media/clouds.gif": "/static/media/clouds.dedf103d.gif",
+    "static/media/goddess_tempel.png": "/static/media/goddess_tempel.869e64f3.png",
+    "static/media/parchment.png": "/static/media/parchment.46ba6886.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.71ab9d7a.js",
+    "static/js/2.73cc0801.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.69ebd4c7.chunk.js"
+  ]
+}
