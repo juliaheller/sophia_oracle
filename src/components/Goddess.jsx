@@ -100,7 +100,7 @@ export default function Goddess({ oracle }) {
         <Wrapper>
             <Header>
                 {" "}
-                Bist du bereit , Sophias Orakelspruch für dich zu empfangen?
+                Bist du bereit, Sophias Orakelspruch für dich zu empfangen?
             </Header>
             <Sophia></Sophia>
             <Oracle>

@@ -11,7 +11,9 @@ import oracleArr from "./components/oracleArr";
 import "./App.css";
 
 function App() {
-    const [oracle, setOracle] = useState("");
+    const [oracle, setOracle] = useState(
+        "Willkommen im Tempel der Sophia. Bitte die Göttin der Weisheit um ihren Rat und klicke auf 'Frag die Göttin'."
+    );
 
     const getOracle = () => {
         const max = oracleArr.length;
