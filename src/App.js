@@ -12,7 +12,7 @@ import "./App.css";
 
 function App() {
     const [oracle, setOracle] = useState(
-        "Willkommen im Tempel der Sophia. Bitte die Göttin der Weisheit um ihren Rat und klicke auf 'Frag die Göttin'."
+        "Willkommen im Tempel der Sophia. Bitte die Göttin der Weisheit um ihren Rat und klicke auf 'Frage die Göttin'."
     );
 
     const getOracle = () => {
@@ -23,8 +23,8 @@ function App() {
 
     return (
         <div className="App">
-            <Goddess oracle={oracle} />
-            <Footer getOracle={getOracle} />
+            <Goddess getOracle={getOracle} oracle={oracle} />
+            <Footer />
         </div>
     );
 }

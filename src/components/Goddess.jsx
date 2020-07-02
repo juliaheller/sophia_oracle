@@ -8,7 +8,7 @@ import sofia from "../images/goddess_tempel.png";
 import clouds from "../images/clouds.gif";
 import parchment from "../images/parchment.png";
 
-export default function Goddess({ oracle }) {
+export default function Goddess({ oracle, getOracle }) {
     const Wrapper = styled.div`
         background: url(${clouds});
         background-repeat: no-repeat;
@@ -19,9 +19,8 @@ export default function Goddess({ oracle }) {
         grid-template-rows: repeat(4, auto);
 
         @media (max-width: 768px) {
-            grid-template-columns: 1fr;
             grid-template-rows: auto;
-            height: 85vh;
+            height: 90vh;
             width: 100%;
         }
     `;
@@ -59,7 +58,6 @@ export default function Goddess({ oracle }) {
 
         @media (max-width: 768px) {
             flex-direction: column;
-            grid-column: 1 / span 3;
             grid-row: 3 / span 4;
             margin: 20px 0;
         }
@@ -76,6 +74,72 @@ export default function Goddess({ oracle }) {
         @media (max-width: 768px) {
             width: 50%;
         }
+    `;
+    const Button = styled.button`
+        height: 100px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 19px 19px 19px 19px;
+        -moz-border-radius: 19px 19px 19px 19px;
+        -webkit-border-radius: 19px 19px 19px 19px;
+        color: black;
+        border: 1px solid white;
+        font-size: 2rem;
+        width: 290px;
+        grid-row: 4 / span 1;
+        grid-column: 3 / span 1;
+        justify-self: center;
+        background: rgb(254, 252, 234); /* Old browsers */
+        background: -moz-linear-gradient(
+            top,
+            rgb(254, 252, 234) 0%,
+            rgb(241, 218, 54) 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+            top,
+            rgb(254, 252, 234) 0%,
+            rgb(241, 218, 54) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+            to bottom,
+            rgb(254, 252, 234) 0%,
+            rgb(241, 218, 54) 100%
+        );
+        @media (max-width: 768px) {
+            display: none;
+        }
+    `;
+    const Button2 = styled.button`
+        height: 100px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 19px 19px 19px 19px;
+        -moz-border-radius: 19px 19px 19px 19px;
+        -webkit-border-radius: 19px 19px 19px 19px;
+        color: black;
+        border: 1px solid white;
+        font-size: 2rem;
+        width: 290px;
+        grid-row: 4 / span 1;
+        grid-column: 3 / span 1;
+        justify-self: center;
+
+        background: rgb(254, 252, 234); /* Old browsers */
+        background: -moz-linear-gradient(
+            top,
+            rgb(254, 252, 234) 0%,
+            rgb(241, 218, 54) 100%
+        ); /* FF3.6-15 */
+        background: -webkit-linear-gradient(
+            top,
+            rgb(254, 252, 234) 0%,
+            rgb(241, 218, 54) 100%
+        ); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(
+            to bottom,
+            rgb(254, 252, 234) 0%,
+            rgb(241, 218, 54) 100%
+        );
     `;
 
     const Header = styled.p`
@@ -100,12 +164,13 @@ export default function Goddess({ oracle }) {
         <Wrapper>
             <Header>
                 {" "}
-                Bist du bereit, Sophias Orakelspruch für dich zu empfangen?
+                <Button2 onClick={getOracle}>Frage die Göttin</Button2>
             </Header>
             <Sophia></Sophia>
             <Oracle>
                 <OracleResult>{oracle}</OracleResult>
             </Oracle>
+            <Button onClick={getOracle}>Frage die Göttin</Button>
         </Wrapper>
     );
 }
